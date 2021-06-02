@@ -1,0 +1,126 @@
+/* 
+Font families:
+font-family: 'Source Code Pro', monospace;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Serif Pro', serif;
+*/ 
+
+/*****************************************
+*           GENERAL STYLES
+*****************************************/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 50%; /*62.5%;*/
+    word-wrap: break-word;
+    background-color:black;
+    color:white;
+}
+
+body {
+    
+}
+
+/*****************************************
+*             MENU STYLES
+*****************************************/
+
+#menu {
+    background-color:black;
+    width:30rem;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    padding: 1.6rem;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.3rem;
+    line-height:2.3rem;
+
+    overflow-y:scroll;
+}
+
+#menu ul {
+    list-style:none;
+}
+
+#menu li {
+    margin-bottom:4.0rem;
+}
+
+#menu li:hover .menu-title {
+    background-color:white;
+    color:black;
+}
+
+#menu li a {
+    color:white;
+    text-decoration: none;
+}
+
+.menu-item {
+    display:flex;
+}
+
+
+.menu-description {
+    opacity:0.5;
+    font-size:1.7rem;
+    color:white;
+    line-height: 1.2;
+}
+
+.menu-index {
+    opacity:0.5;
+    font-size:1.7rem;
+    color:white;
+    flex-shrink:0;
+    flex-basis: 3.7rem;
+    line-height: 2.3rem;
+}
+
+.sub-menu li {
+    margin-left:3.7rem;
+    font-size:2rem;
+    line-height:2rem;
+}
+
+.active .menu-title {
+    text-decoration: underline;
+}
+
+.sub-menu .menu-index {
+    line-height:2rem;
+}
+
+.sub-menu .menu-description {
+    font-size:1.5rem;
+}
+
+
+#content {
+    margin-left: 30rem;
+}
+
+.logo {
+    width:12rem;
+    max-width:100%;
+    margin-left:3.7rem;
+    margin-bottom:2.0rem;
+    margin-top:2rem;
+}
+
+/*****************************************
+*           CONTENT STYLES
+*****************************************/
+
+#content {
+    padding:3rem;
+    padding-left:1rem;
+}

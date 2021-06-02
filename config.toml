@@ -1,0 +1,7 @@
+baseURL = "https://ubiquitousaugmented.fashion/"
+languageCode = "en-us"
+title = "Ubiquitous Augmented Fashion"
+theme = "ubiquitous-augmented-fashion-theme"
+
+[Params.documentSettings]
+    logoURL = "/images/uaf-logo.png"

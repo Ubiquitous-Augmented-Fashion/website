@@ -1,0 +1,73 @@
+<nav id="menu">
+    <a href="/"><img src="{{ .Site.Params.documentSettings.logoURL }}" class="logo"></a>
+    <ul>
+        {{ $currentPage := . }}
+        {{ range $index, $element := .Site.Menus.main }}
+            {{ if .HasChildren }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}">
+                        <div class="menu-item">
+                            <p class="menu-index">{{ printf "%02d" $index }}.</p>
+                            <div class="menu-content">
+                                {{ .Pre }}
+                                <span class="menu-title">{{ .Name }}</span>
+                                <p class="menu-description">{{ .Page.Description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <ul class="sub-menu">
+                    {{ range $subindex, $subelement := .Children }}
+                        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                            <a href="{{ .URL }}">
+                                <div class="menu-item">
+                                    <p class="menu-index">{{ printf "%02d" $subindex }}.</p>
+                                    <div class="menu-content">
+                                        {{ .Pre }}
+                                        <span class="menu-title">{{ .Name }}</span>
+                                        <p class="menu-description">{{ .Page.Description }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+            {{ else }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}">
+                        <div class="menu-item">
+                            <p class="menu-index">{{ printf "%02d" $index }}.</p>
+                            <div class="menu-content">
+                                {{ .Pre }}
+                                <span class="menu-title">{{ .Name }}</span>
+                                <p class="menu-description">{{ .Page.Description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {{ end }}
+        {{ end }}
+        <li>
+            <a href="https://www.instagram.com/ubiquitous.augmented.fashion/" target="_blank">
+                <div class="menu-item">
+                    <p class="menu-index">XX.</p>
+                    <div class="menu-content">
+                        <span class="menu-title">Instagram --></span>
+                        <p class="menu-description">@ubiquitous.<br>augmented.<br>fashion</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/Ubiquitous-Augmented-Fashion" target="_blank">
+                <div class="menu-item">
+                    <p class="menu-index">XX.</p>
+                    <div class="menu-content">
+                        <span class="menu-title">GitHub --></span>
+                        <p class="menu-description">Ubiquitous-<br>Augmented-<br>Fashion</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>
