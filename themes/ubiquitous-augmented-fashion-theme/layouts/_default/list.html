@@ -1,3 +1,13 @@
 {{ define "main" }}
-    {{.Content}}
+{{.Content}}
+<div class="pagelist">
+{{ range $index, $element := .Pages }}
+<a class="pagelist-item" href="{{.Permalink}}">
+<div>
+    <h2><span class="textstyle half-opaque">{{ printf "%02d" $index }}.</span> {{ .Title }}</h2>
+    <p class="pagelist-item-description">{{ .Description }}</p>
+</div>
+</a>
+{{ end }}
+</div>
 {{ end }}

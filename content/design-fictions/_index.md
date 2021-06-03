@@ -12,3 +12,6 @@ description: "Explore a future where we will be able to digitally augment the wa
 ---
 
 # Design Fictions
+Explore a future where you will be able to digitally augment the way you dress and present yourself to the people around you. A future in which {{< textstyle blue >}}👓 Augmented Reality Glasses{{< /textstyle >}} are all around us and we spend a large part of our day in the {{< textstyle pink >}}🌐 Metaverse{{< /textstyle >}}. 
+
+---> {{< textstyle emphasis >}}Pick one of the scenarios below:{{< /textstyle >}}

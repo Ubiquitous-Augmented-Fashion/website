@@ -42,7 +42,7 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-size: 2.3rem;
     line-height:2.3rem;
-
+    
     overflow-y:scroll;
 }
 
@@ -75,6 +75,7 @@ body {
     color:white;
     line-height: 1.2;
     font-family: 'Source Code Pro', monospace;
+    font-weight:400;
 }
 
 .menu-index {
@@ -124,6 +125,7 @@ body {
 #content {
     padding:3rem;
     padding-left:1rem;
+    margin-bottom:10rem;
 }
 
 h1 {
@@ -132,16 +134,25 @@ h1 {
     font-size: 3.6rem;
     margin-bottom: 4.8rem;
     max-width: 76rem;
+    margin-top:14.6rem;
+    padding-bottom:1.6rem;
+    border-bottom:1px solid rgba(255, 255, 255, 0.316);
+}
+
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight:400;
+    font-size:3rem;
 }
 
 p {
     font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.0rem;
     margin-bottom: 2.6rem;
     line-height: 1.5;
-    max-width: 97rem;
-    opacity: 0.95;
+    max-width: 70rem;
+    opacity: 1;
 }
 
 a {
@@ -153,12 +164,19 @@ a {
 *****************************************/
 
 footer {
-    width:100%;
+    /*width:100%;*/
+    right:0;
     text-align:center;
     margin-top:3rem;
+    margin-left:30rem;
     border-top:1px solid rgba(255, 255, 255, 0.316);
-    padding-top:3rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
     font-size:1.8rem;
+    bottom:0;
+    position:fixed;
+    left:0;
+    background-color:black;
 }
 
 /*****************************************
@@ -172,6 +190,7 @@ footer {
     display:inline-block;
     text-align:center;
     max-width:100%;
+    text-decoration:none;
 }
 
 .button div {
@@ -179,6 +198,11 @@ footer {
     padding: 1rem 2rem;
     border: 1px solid #FF94F5;
     box-shadow: 5px 5px black, 6px 6px #FF94F5;
+}
+
+.button:hover div {
+    background-color:white;
+    color:black;
 }
 
 .button .button-description {
@@ -240,7 +264,16 @@ footer {
     column-gap:3rem;
 
     column-rule: 1px dashed #ffffff80;
-    
+    max-width: 97rem;
+}
+
+/*****************************************
+*           TITLE STYLING
+*****************************************/
+
+.title {
+    margin-top:0;
+    border-bottom:none;
 }
 
 /*****************************************
@@ -249,6 +282,59 @@ footer {
 
 span.textstyle.half-opaque {
     opacity: 0.5;
+}
+
+span.textstyle.pink {
+    color: #FF94F5;
+}
+
+span.textstyle.blue {
+    color: #6EE4FF;
+}
+
+span.textstyle.emphasis {
+    font-size:3rem;
+    font-style:italic;
+}
+
+/*****************************************
+*           BUTTON STYLING
+*****************************************/
+
+.pagelist {
+    width:100%;
+    max-width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap:3rem;
+    row-gap:3rem;
+    grid-auto-rows: 1fr;
+}
+
+.pagelist-item div {
+    border:1px solid white;
+    padding:3rem;
+    
+}
+
+a.pagelist-item {
+    color:white;
+    text-decoration:none;
+}
+
+
+.pagelist-item h2 {
+}
+
+.pagelist-item:hover div {
+    background-color:white;
+    color:black;
+}
+
+.pagelist-item-description {
+    font-weight:400;
+    opacity:0.5;
+    
 }
 
 

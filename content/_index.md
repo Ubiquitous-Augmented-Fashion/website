@@ -10,7 +10,8 @@ weight: 10
 
 {{< section with-sidebar >}}
 {{% section %}}
-# Ubiquitous Augmented Fashion: A Design Fiction on the Future of Digital Fashion in the Augmented Reality Metaverse
+{{< title >}}Ubiquitous Augmented Fashion: A Design Fiction on the Future of Digital Fashion in the Augmented Reality Metaverse
+{{< /title >}} 
 {{% text two-columns %}}
 
 > {{< textstyle half-opaque >}}University of Technology Eindhoven - {{< /textstyle >}} Current developments in the area of augmented reality, computer vision and digital fashion allow us to fantasize about a future where we will be able to digitally augment the way we dress and present ourselves to our environment. 
