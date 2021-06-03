@@ -74,6 +74,7 @@ body {
     font-size:1.7rem;
     color:white;
     line-height: 1.2;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .menu-index {
@@ -123,4 +124,99 @@ body {
 #content {
     padding:3rem;
     padding-left:1rem;
+}
+
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
+    max-width: 76rem;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 2.0rem;
+    margin-bottom: 2.6rem;
+    line-height: 1.5;
+    max-width: 97rem;
+    opacity: 0.95;
+}
+
+a {
+    color:#FF94F5;
+}
+
+/*****************************************
+*           FOOTER STYLING
+*****************************************/
+
+footer {
+    width:100%;
+    text-align:center;
+    margin-top:20rem;
+    border-top:1px solid rgba(255, 255, 255, 0.316);
+    padding-top:3rem;
+    font-size:1.8rem;
+}
+
+/*****************************************
+*           SECTION STYLING
+*****************************************/
+
+.section {
+    padding-top: 6.0rem;
+}
+
+/* with-sidebar class */
+.section.with-sidebar {
+    display:flex;
+    max-width: 1300px;/*145rem;*/
+}
+
+.section .section {
+    padding-top: 0;
+}
+
+.section.with-sidebar .section:nth-child(1) {
+    flex-grow: 1;
+    padding-right: 3rem;
+}
+
+.section.with-sidebar .section:nth-child(2) {
+    flex-basis: 38rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/*****************************************
+*           PARAGRAPH STYLING
+*****************************************/
+
+.text.monospaced {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.8rem;
+}
+
+.text.two-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 33rem;
+    -moz-column-width: 33rem;
+    column-width: 33rem;
+
+    column-gap:3rem;
+
+    column-rule: 1px dashed #ffffff80;
+    
+}
+
+/*****************************************
+*           TEXT STYLING
+*****************************************/
+
+span.textstyle.half-opaque {
+    opacity: 0.5;
 }
